@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Gloria+Hallelujah&display=swap');
+
+body{
+font-family: 'Poppins', sans-serif;
+align-items: center;   
+justify-content: center;
+margin: 0;
+padding: 0;
+height: 100vh;
+background-color: #ccf7ff
+
+}
+.main-table{
+  width: 45%;
+  height: 65%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.left-section,
+.right-section {
+  width: 50%;
+  text-align: center;
+ 
+}
+.right-section{
+    background-color: #f8f8f8;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.left-section{
+    background-color: #02b4d2;
+    color:#f8f8f8f4;
+    padding-bottom: 135px;  
+}
+
+input,textarea{
+ width:70% ;
+ padding: 10px;
+ margin: 5px 0;
+ font-size: 12px; 
+ background-color:#eeeeee;
+  border: none; 
+}
+input{
+    height: 25px;
+}
+button{
+    width: 35%;
+    height: 30px;
+    background-color: #02b4d2;
+    border-radius: 15px;
+    border: none;
+    color: #eeeeee;
+}
+h6{
+    text-align: left;
+   margin: 20px 25px 0px 10px;
+   padding-left: 27px;
+   font-family:initial;
+   font-size: 12px;
+}
+
+
+
+  
+ 
+  
+  
+
+
+
+
+
+
+
+
+
+
