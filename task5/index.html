@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asgaard Sofa - Furniro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="D:\contact-form\task5\style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="D:\contact-form\task5\img\logo.png" alt="Logo" style="height: 35px;">
+        </a>
+        <!-- Middle Nav Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Right Icons -->
+        <ul class="navbar-nav d-flex flex-row align-items-center gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="D:\contact-form\task5\img\user.png" alt="User" style="width: 24px; height: 24px;">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="D:\contact-form\task5\img\search.png" alt="Search" style="width: 20px; height: 20px;">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="D:\contact-form\task5\img\heart.png" alt="Heart" style="width: 20px; height: 20px;">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="D:\contact-form\task5\img\cart.png" alt="Cart" style="width: 20px; height: 20px;">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-custom container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+            <span class="breadcrumb-separator">›</span>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Shop</a>
+            <span class="breadcrumb-separator">›</span>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <span class="breadcrumb-divider"></span>
+            <span class="breadcrumb-current">Asgaard sofa</span>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <!-- Product Section -->
+    <div class="product-section">
+      <div class="container">
+        <div class="row">
+          <!-- Product Images -->
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-2">
+                <div class="d-flex flex-column">
+                  <img src="D:\contact-form\task5\img\small1.png" alt="Sofa thumbnail" class="thumbnail active mb-3">
+                  <img src="D:\contact-form\task5\img\small2.png" alt="Sofa thumbnail" class="thumbnail mb-3">
+                  <img src="D:\contact-form\task5\img\small3.png" alt="Sofa thumbnail" class="thumbnail mb-3">
+                  <img src="D:\contact-form\task5\img\small4.png" alt="Sofa thumbnail" class="thumbnail mb-3">
+                </div>
+              </div>
+              <div class="col-10">
+                <img src="D:\contact-form\task5\img\big1.png" alt="Asgaard sofa" class="product-image">
+              </div>
+            </div>
+          </div>
+          <!-- Product Details -->
+          <div class="col-md-6">
+            <h1 class="product-title">Asgaard sofa</h1>
+            <div class="product-price">Rs. 250,000.00</div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="review-count">5 Customer Review</span>
+            </div>
+            <p class="product-description"> Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound. </p>
+            <div class="mb-3">
+              <label class="form-label">Size</label>
+              <div class="size-options">
+                <button class="btn active">L</button>
+                <button class="btn">XL</button>
+                <button class="btn">XS</button>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Color</label>
+              <div class="color-options  d-flex">
+                <div class="color-option color-purple active"></div>
+                <div class="color-option color-black"></div>
+                <div class="color-option color-brown"></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-4">
+              <div class="quantity-selector">
+                <button type="button" onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button type="button" onclick="increaseQuantity()">+</button>
+              </div>
+              <button class="btn btn-add-cart">Add To Cart</button>
+              <button class="btn btn-compare">+ Compare</button>
+            </div>
+            <div class="product-meta">
+              <div style="width: fit-content; margin-bottom: 1rem;">
+                <hr style="width: 470px; height: 1px; background-color:black; border: none; margin: 0;">
+              </div>
+              <div class="row">
+                <div class="col-3">SKU</div>
+                <div class="col-9">: SS001</div>
+              </div>
+              <div class="row">
+                <div class="col-3">Category</div>
+                <div class="col-9">: Sofas</div>
+              </div>
+              <div class="row">
+                <div class="col-3">Tags</div>
+                <div class="col-9">: Sofa, Chair, Home, Shop</div>
+              </div>
+              <div class="row">
+                <div class="col-3">Share</div>
+                <div class="col-9">
+                  <div class="social-share">: <a href="#">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product Information Tabs -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs justify-content-center border-0 mb-4" id="productTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active px-4 py-3 border-0 text-dark fw-bold" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab"> Description </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link px-4 py-3 border-0 text-muted" id="additional-info-tab" data-bs-toggle="tab" data-bs-target="#additional-info" type="button" role="tab"> Additional Information </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link px-4 py-3 border-0 text-muted" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab"> Reviews [5] </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="productTabsContent">
+            <div class="tab-pane fade show active" id="description" role="tabpanel">
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <p class="text-muted mb-4"> Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road. </p>
+                  <p class="text-muted mb-5"> Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel. </p>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="product-info-image">
+                        <img src="D:\contact-form\task5\img\description.png" alt="Sofa View 1" class="img-fluid rounded">
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="product-info-image">
+                        <img src="D:\contact-form\task5\img\description2.png" alt="Sofa View 2" class="img-fluid rounded">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="additional-info" role="tabpanel">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="table-responsive">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td class="fw-bold text-dark" style="width: 30%;">Weight</td>
+                          <td class="text-muted">25kg</td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold text-dark">Dimensions</td>
+                          <td class="text-muted">94 x 60 x 60 cm</td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold text-dark">Seat Height</td>
+                          <td class="text-muted">41cm</td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold text-dark">Leg Height</td>
+                          <td class="text-muted">30cm</td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold text-dark">Material</td>
+                          <td class="text-muted">Solid Wood Frame, Premium Fabric</td>
+                        </tr>
+                        <tr>
+                          <td class="fw-bold text-dark">Color</td>
+                          <td class="text-muted">Natural, Black, Brown</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="reviews" role="tabpanel">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="mb-4">
+                    <h5 class="fw-bold">Customer Reviews</h5>
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="rating me-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                      </div>
+                      <span class="text-muted">4.5 out of 5 stars (5 reviews)</span>
+                    </div>
+                  </div>
+                  <div class="review-item border-bottom pb-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                      <div>
+                        <h6 class="fw-bold mb-1">Ahmed Hassan</h6>
+                        <div class="rating">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                        </div>
+                      </div>
+                      <small class="text-muted">2 days ago</small>
+                    </div>
+                    <p class="text-muted mb-0">Excellent quality sofa! Very comfortable and looks great in our living room. The delivery was quick and the assembly was easy.</p>
+                  </div>
+                  <div class="review-item border-bottom pb-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                      <div>
+                        <h6 class="fw-bold mb-1">Sara Mohamed</h6>
+                        <div class="rating">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="far fa-star text-warning"></i>
+                        </div>
+                      </div>
+                      <small class="text-muted">1 week ago</small>
+                    </div>
+                    <p class="text-muted mb-0">Beautiful design and good quality materials. The color matches perfectly with my decor. Highly recommended!</p>
+                  </div>
+                  <div class="review-item">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                      <div>
+                        <h6 class="fw-bold mb-1">Omar Ali</h6>
+                        <div class="rating">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                        </div>
+                      </div>
+                      <small class="text-muted">2 weeks ago</small>
+                    </div>
+                    <p class="text-muted mb-0">Great value for money. The sofa is very comfortable and the build quality is impressive. Would definitely buy again!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h2 class="section-title">Related Products</h2>
+      <div class="row g-4">
+        <!-- Syitherine Product -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card product-card h-100">
+            <div class="product-image">
+              <img src="D:\contact-form\task5\img\product1.png">
+              <span class="discount-badge">-30%</span>
+            </div>
+            <div class="product-info">
+              <h5 class="product-title">Syitherine</h5>
+              <p class="product-subtitle">Stylish cafe chair</p>
+              <div class="price-info">
+                <span class="price-current">Rp 2.500.000</span>
+                <span class="price-original">Rp 3.500.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Leviosa Product -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card product-card h-100">
+            <div class="product-image">
+              <img src="D:\contact-form\task5\img\product2.png">
+            </div>
+            <div class="product-info">
+              <h5 class="product-title">Leviosa</h5>
+              <p class="product-subtitle">Stylish cafe chair</p>
+              <div class="price-info">
+                <span class="price-current">Rp 2.500.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Lolito Product -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card product-card h-100">
+            <div class="product-image">
+              <img src="D:\contact-form\task5\img\product3.png">
+              <span class="discount-badge">-50%</span>
+            </div>
+            <div class="product-info">
+              <h5 class="product-title">Lolito</h5>
+              <p class="product-subtitle">Luxury big sofa</p>
+              <div class="price-info">
+                <span class="price-current">Rp 7.000.000</span>
+                <span class="price-original">Rp 14.000.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Respira Product -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card product-card h-100">
+            <div class="product-image">
+              <img src="D:\contact-form\task5\img\product4.png">
+              <span class="new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h5 class="product-title">Respira</h5>
+              <p class="product-subtitle">Outdoor bar table and stool</p>
+              <div class="price-info">
+                <span class="price-current">Rp 500.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Show More Button -->
+      <div class="text-center mt-5">
+        <button class="btn show-more-btn">Show More</button>
+      </div>
+    </div>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <!-- Brand & Address -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="footer-brand">Funiro.</div>
+            <div class="footer-address"> 400 University Drive Suite 200 Coral <br> Gables, <br> FL 33134 USA </div>
+          </div>
+          <!-- Links -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <div class="footer-column">
+              <h6>Links</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#shop">Shop</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Help -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <div class="footer-column">
+              <h6>Help</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="#payment">Payment Options</a>
+                </li>
+                <li>
+                  <a href="#returns">Returns</a>
+                </li>
+                <li>
+                  <a href="#privacy">Privacy Policies</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Newsletter -->
+          <div class="col-lg-5 col-md-6 mb-4">
+            <div class="newsletter-section">
+              <h6>Newsletter</h6>
+              <div class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter Your Email Address">
+                <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p class="copyright-text">2023 furino. All rights reverved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Quantity selector functions
+      function increaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        quantityInput.value = parseInt(quantityInput.value) + 1;
+      }
+
+      function decreaseQuantity() {
+        const quantityInput = document.getElementById('quantity');
+        if (parseInt(quantityInput.value) > 1) {
+          quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+      }
+      // Size selector
+      document.querySelectorAll('.size-options .btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.size-options .btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+      // Color selector
+      document.querySelectorAll('.color-option').forEach(option => {
+        option.addEventListener('click', function() {
+          document.querySelectorAll('.color-option').forEach(o => o.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+      // Thumbnail selector
+      document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+          document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+      // Tab functionality
+      document.querySelectorAll('#productTabs .nav-link').forEach(tab => {
+        tab.addEventListener('click', function() {
+          document.querySelectorAll('#productTabs .nav-link').forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+    </script>
+  </body>
+</html>
