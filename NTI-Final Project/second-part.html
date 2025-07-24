@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+     <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link  rel="stylesheet" href="first-part.css">
+     <link  rel="stylesheet" href="second-part.css">
+    
+    <!-- <script src="script.js"> </script> -->
+</head>
+<body>
+    <!-- Top Header -->
+  <div class="container-fluid border-b">
+    <div class="flex align-items-center header-section px-4 py-2">
+      
+      <!-- Logo -->
+      <div class=" logo-section">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="Logo" width="130px">
+      </div>
+
+      <!-- Contact Info with better spacing -->
+      <div class="col-auto phone-section">
+        <div class="d-flex align-items-center">
+          <i class="fa-solid fa-phone phone-icon"></i>
+          <div class="phone-info">
+            <p class="mb-0 small text-muted">Contact us 24/7</p>
+            <strong>(+92) 3942 7879</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="col search-container">
+        <div class="search-wrapper" style="max-width: 400px;">
+          <div class="input-group">
+            <select class="form-select" style="max-width: 150px;">
+                <option selected>All Categories</option>
+          <optgroup label="Autopart">
+            <option>Accessories</option>
+            <option>Car Care</option>
+            <option>Car Electronics</option>
+            <option>Equipment</option>
+            <option>Lights</option>
+            <option>Oils & Fluids</option>
+            <option>Tires</option>
+            <option>Wheels</option>
+          </optgroup>
+          <optgroup label="Beauty & Health">
+            <option>Bags & Cases</option>
+            <option>BB Creams</option>
+            <option>Body & Bath</option>
+            <option>Brushes & Tools</option>
+            <option>Hair Care</option>
+            <option>Lipstick</option>
+            <option>Makeup</option>
+            <option>Makeup Palettes</option>
+            <option>Mascara</option>
+            <option>Mask</option>
+            <option>Nail Care</option>
+            <option>Skincare</option>
+            <option>Toner</option>
+          </optgroup>
+          <optgroup label="Electronic">
+            <option>Apple</option>
+            <option>Camera</option>
+            <option>Controller</option>
+            <option>Headphones</option>
+            <option>Smartwatch</option>
+            <option>Speaker</option>
+          </optgroup>
+          <optgroup label="Fashion">
+            <optgroup label="Men">
+              <option>Accessories</option>
+              <option>Hoodies</option>
+              <option>Jackets & Coats</option>
+              <option>Polo Shirts</option>
+              <option>Shirts</option>
+              <option>Shoes</option>
+            </optgroup>
+            <optgroup label="Women">
+              <option>Accessories</option>
+              <option>Dress</option>
+              <option>Shirts</option>
+              <option>Shoes</option>
+              <option>Shorts</option>
+              <option>Skirts</option>
+              <option>Tops</option>
+            </option>
+          </optgroup>
+        </select>
+              
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for products..." autocomplete="off">
+            <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          
+          <!-- Search Dropdown -->
+          <div class="search-dropdown" id="searchDropdown">
+            <div class="search-dropdown-content">
+              <h6 class="search-dropdown-title">Popular search</h6>
+              <div class="popular-searches">
+                <span class="search-tag">smartphone</span>
+                <span class="search-tag">tablet</span>
+                <span class="search-tag">controller</span>
+                <span class="search-tag">furniture</span>
+                <span class="search-tag">laptop</span>
+                <span class="search-tag">playstation</span>
+                <span class="search-tag">womens fashion</span>
+                <span class="search-tag">home & decor</span>
+                <span class="search-tag">camera</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Language Selector -->
+      <div class="col-auto language-currency-section">
+        <div class="dropdown custom-dropdown">
+          <button class="btn btn-light dropdown-toggle custom-arrow d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+            <div class="flag-icon us-flag me-2"></div>
+            English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon us-flag me-2"></div> English</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon spain-flag me-2"></div> Español</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon france-flag me-2"></div> Français</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon portugal-flag me-2"></div> Português</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Currency Selector -->
+      <div class="col-auto">
+        <div class="dropdown custom-dropdown">
+          <button class="btn btn-light dropdown-toggle custom-arrow" type="button" data-bs-toggle="dropdown">
+            USD
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD - US Dollar</a></li>
+            <li><a class="dropdown-item" href="#">EUR - Euro</a></li>
+            <li><a class="dropdown-item" href="#">BRL - Brazilian Real</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Currency & Actions -->
+      <div class="col-auto action-buttons">
+        <div class="d-flex align-items-center gap-2">
+
+          <!-- Account -->
+          <a href="#" class="btn btn-light d-flex align-items-center gap-2 hover-red">
+            <i class="fa-solid fa-user"></i>
+            <span class="d-none d-md-inline">Account</span>
+          </a>
+
+          <!-- Wishlist -->
+          <a href="#" class="btn btn-light position-relative hover-red">
+            <i class="fa-solid fa-heart"></i>
+            <span class="badge bg-danger">0</span>
+          </a>
+
+          <!-- Cart -->
+          <a href="#" class="btn btn-light position-relative hover-red">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span class="badge bg-danger">0</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg border-bottom">
+     <div class="container-fluid d-flex align-items-center justify-content-between px-4 gap-3">
+<!-- Categories Button -->
+<div class="d-flex align-items-center">
+  <button class="btn btn-link text-dark fw-bold hover-red p-0">
+    <i class="fa-solid fa-bars me-2"></i>SHOP BY CATEGORIES
+  </button>
+</div>
+
+<!-- Navigation Links -->
+<div class="d-flex align-items-center gap-4 flex-nowrap">
+  <a class="nav-link text-dark hover-red homepages-link p-0" href="#">Homepages <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Categories <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Products <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Pages <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">About Us</a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Blog</a>
+  <a class="nav-link text-dark hover-red d-flex align-items-center gap-2 p-0" href="#">
+    <img src="img\discount.png" width="20" height="20" alt=""> Best Discount
+  </a>
+</div>
+
+<!-- Recently Viewed -->
+<div class="d-flex align-items-center">
+  <button class="btn btn-link text-dark hover-red p-0">
+    Recently viewed <span class="nav-arrow"></span>
+  </button>
+</div>
+</div> 
+</nav>
+
+<body class="bg-white text-gray-900 font-sans min-h-screen flex flex-col px-4 md:px-10 py-8 max-w-7xl mx-auto">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="mb-4 text-sm text-gray-600 select-none">
+    <ol class="inline-flex space-x-1 md:space-x-2">
+      <li>
+        <a href="#" class="hover:underline">Home</a>
+        <span class="mx-1">›</span>
+      </li>
+      <li aria-current="page" class="text-gray-400 cursor-default select-none">Shop</li>
+    </ol>
+  </nav>
+
+  <!-- Page Title -->
+  <h1 class="text-2xl font-extrabold mb-6 select-none">Shop</h1>
+
+  <!-- Category buttons horizontal scroll -->
+  <div class="mb-8 flex space-x-4 overflow-x-auto pb-1 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-300">
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Autopart</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Beauty & Health</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Electronic</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Fashion</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Game Accessories</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Home & Decor</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Laptop & Computer</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">Phone & Tablet</button>
+    <button type="button" class="filter-btn px-4 py-2 rounded-md text-gray-800 whitespace-nowrap border border-gray-200 hover:bg-gray-100 transition select-none">TV, Audio - Video</button>
+  </div>
+
+  <!-- Content area -->
+  <div class="flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar filters -->
+    <aside class="w-full md:w-1/4 flex-shrink-0 select-none">
+
+      <!-- Colors -->
+      <section class="mb-8">
+        <h2 class="text-lg font-semibold mb-4">Colors</h2>
+        <ul class="space-y-2 max-h-[420px] overflow-y-auto scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-300 pr-2">
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-black border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Black</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">95</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-blue-500 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Blue</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">11</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-yellow-800 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Brown</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">26</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-red-900 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Burgundy</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">1</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-pink-600 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Cool Pink</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">1</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-purple-800 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Deep Purple</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">1</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-gray-300 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Gray</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">25</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-green-500 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Green</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">15</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-yellow-100 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Light Brown</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">4</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-slate-900 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Navy</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">9</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-orange-500 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Orange</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">4</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-pink-300 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Pink</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">16</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-purple-300 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Purple</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">3</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-red-600 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Red</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">15</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-rose-800 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Rosewood</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">1</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm" style="background-color:#6b3f38; border: 1px solid #ddd;"></span>
+              <input type="checkbox" class="hidden" />
+              <span>True Cotal</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">1</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-white border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>White</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">34</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <label class="flex items-center space-x-2 cursor-pointer">
+              <span aria-hidden="true" class="block w-4 h-4 rounded-sm bg-yellow-300 border border-gray-300"></span>
+              <input type="checkbox" class="hidden" />
+              <span>Yellow</span>
+            </label>
+            <span class="text-gray-400 text-sm select-none">9</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Brands -->
+      <section>
+        <h2 class="text-lg font-semibold mb-4">Brands</h2>
+        <div class="relative text-gray-600 focus-within:text-gray-900">
+          <input
+            type="search"
+            name="brand-search"
+            class="brand-search w-full border border-gray-300 text-sm rounded-md py-2 px-3 pl-10 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="search brands ..."
+            aria-label="Search brands"
+          />
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M10 2a8 8 0 105.293 14.707l4.853 4.853 1.414-1.414-4.853-4.853A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+
+    <!-- Main products area -->
+    <main class="flex-1">
+
+      <!-- Top toolbar -->
+      <section class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8 select-none">
+        <p class="text-sm text-gray-600 font-semibold">Showing all 19 results</p>
+        <label class="flex items-center space-x-2 cursor-pointer whitespace-nowrap text-gray-700">
+          <input type="checkbox" class="w-4 h-4" id="saleOnly" />
+          <span>Show only products on sale</span>
+        </label>
+
+        <div class="flex items-center gap-5 whitespace-nowrap text-gray-600 font-medium text-sm">
+          <div>
+            Show:
+            <button type="button" class="underline font-semibold text-black">28</button>
+            <button type="button" class="">56</button>
+            <button type="button" class="">84</button>
+          </div>
+
+          <div class="flex items-center space-x-1">
+            <label for="sort" class="text-gray-500">Sort:</label>
+            <select id="sort" name="sort" class="border border-gray-300 rounded-md px-2 py-1 text-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+              <option value="latest" selected>Sort by latest</option>
+              <option value="price-low-high">Price: Low to High</option>
+              <option value="price-high-low">Price: High to Low</option>
+              <option value="popularity">Popularity</option>
+            </select>
+          </div>
+
+          <div class="view-toggle flex items-center border border-gray-300 rounded-md p-1 text-gray-500" title="Toggle view mode" aria-label="Toggle products view mode">
+            <button type="button" aria-pressed="true" aria-label="Grid view" class="active" id="btnGridView" title="Grid view">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" stroke-width="0">
+                <rect x="3" y="3" width="7" height="7" rx="1" ry="1"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1" ry="1"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1" ry="1"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1" ry="1"></rect>
+              </svg>
+            </button>
+            <button type="button" aria-pressed="false" aria-label="List view" id="btnListView" title="List view">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products list -->
+      <section id="productsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <!-- Product cards inserted here by JS -->
+      </section>
+
+    </main>
+
+  </div>
+   <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 px-6 sm:px-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-y-10 gap-x-8">
+
+      <!-- Branding & Contact Info -->
+      <div class="col-span-2">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" width="120px">
+        <address class="mt-6 not-italic text-gray-400 space-y-3 text-sm">
+          <p class="flex items-start gap-3"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0 mt-[3px]">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0L6.343 16.657a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>29 SE 2nd Ave, Miami Florida 33131, United States</p>
+          <p class="flex items-center gap-3"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0a2.25 2.25 0 00-2.25-2.25h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.75a.75.75 0 01-.75.75h-18a.75.75 0 01-.75-.75v-.75">
+              </path>
+            </svg>info@example.com</p>
+          <p class="mt-3 font-semibold text-white text-lg">(+92) 3942 7879</p>
+        </address>
+      </div>
+
+      <!-- Shopping Links -->
+      <div>
+        <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">SHOPPING</h3>
+        <nav class="space-y-3 text-gray-400 text-sm" aria-label="Shopping links">
+          <a href="#" class="block hover:text-white">Wishlist</a>
+          <a href="#" class="block hover:text-white">Shop by Brand</a>
+          <a href="#" class="block hover:text-white">Offers</a>
+          <a href="#" class="block hover:text-white">Track order</a>
+          <a href="#" class="block hover:text-white">Size Guide</a>
+        </nav>
+      </div>
+
+      <!-- Information Links -->
+      <div>
+        <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">INFOMATION</h3>
+        <nav class="space-y-3 text-gray-400 text-sm" aria-label="Information links">
+          <a href="#" class="block hover:text-white">Track Order</a>
+          <a href="#" class="block hover:text-white">Shipping & Returns</a>
+          <a href="#" class="block hover:text-white">About us</a>
+          <a href="#" class="block hover:text-white">Help</a>
+          <a href="#" class="block hover:text-white">Gift Cards</a>
+        </nav>
+      </div>
+
+      <!-- Account Links -->
+      <div>
+        <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">ACCOUNT</h3>
+        <nav class="space-y-3 text-gray-400 text-sm" aria-label="Account links">
+          <a href="#" class="block hover:text-white">Cart</a>
+          <a href="#" class="block hover:text-white">My account</a>
+          <a href="#" class="block hover:text-white">My orders</a>
+          <a href="#" class="block hover:text-white">Wishlist</a>
+          <a href="#" class="block hover:text-white">Affiliate Program</a>
+        </nav>
+      </div>
+
+      <!-- Newsletter & Social -->
+      <div class=" w-[500px]max-w-md">
+         <h3 class="font-bold text-white mb-5 text-lg"> Let’s keep in touch </h3>
+         <form class="mb-6" aria-label="Subscribe to newsletter"> 
+        <div class="relative"> 
+        <!-- Input Field --> <input type="email" placeholder="Enter your email address" aria-label="Email address" class="w-full rounded border border-gray-700 bg-transparent px-4 pr-12 py-2 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" />
+         <button
+    type="submit"
+    aria-label="Subscribe"
+    title="Subscribe"
+    class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none"
+  >
+    <i class="fa-solid fa-arrow-right-long"></i>
+  </button>
+</div><br>
+      
+
+        <div class="flex gap-6 text-gray-400 icon" aria-label="Social media links">
+          <a href="#" aria-label="Facebook" class="hover:text-white" title="Facebook">
+           <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="TikTok" class="hover:text-white" title="TikTok">
+           <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="#" aria-label="X (Twitter)" class="hover:text-white" title="X (Twitter)">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" aria-label="YouTube" class="hover:text-white" title="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-white" title="Instagram">
+           
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra links and info container -->
+    <div
+      class="max-w-7xl mx-auto mt-10 border border-gray-800 rounded p-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-400 text-sm select-none">
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <p class="font-semibold text-white">Didn't find what you were looking for?</p>
+          <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Contact Us</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-face-smile"></i>
+        <div>
+          <p class="font-semibold text-white">How can we help you today?</p>
+          <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Help Center</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-comment-dots"></i>
+        <div>
+          <p class="font-semibold text-white">We’d love to hear what you think!</p>
+          <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Give Feedback</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright and payment methods -->
+    <div
+      class="max-w-7xl mx-auto mt-12 flex flex-col-reverse md:flex-row justify-between items-center space-y-6 md:space-y-0 text-gray-500 text-xs select-none">
+      <p>Copyright © Merto. All Rights Reserved</p>
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" width="250px">
+    </div>
+  </footer>
+
+  <script>
+    // DATA
+    const products = [
+      {
+        id: 1,
+        title: "Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD",
+        price: 999,
+        oldPrice: 1536,
+        discountPercent: 35,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-300x300.jpg",
+        onSale: true,
+      },
+      {
+        id: 2,
+        title: "Apple Watch Series 9 GPS 45mm, Aluminum Case with",
+        price: 890,
+        oldPrice: 950,
+        discountPercent: 6,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2-300x300.jpg",
+        onSale: true,
+      },
+      {
+        id: 3,
+        title: "TOOLS 34 Low Profile Hydraulic Trolley",
+        price: 767,
+        oldPrice: 837,
+        discountPercent: 8,
+        img: "https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-300x300.jpg",
+        onSale: true,
+      },
+      {
+        id: 4,
+        title: "14-inch Fasion Simplicity Quality Wall Clock, Home",
+        price: 50,
+        oldPrice: 75,
+        discountPercent: 33,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-6-300x300.jpg",
+        onSale: true,
+      },
+      {
+        id: 5,
+        title: "Gaming Chair, Ergonomic Computer Office Desk Chair",
+        price: 129,
+        oldPrice: 199,
+        discountPercent: 35,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-42-300x300.jpg",
+        onSale: true,
+      },
+      {
+        id: 6,
+        title: "Translucent Compact Face Powder - 03 Medium, 0.22 oz",
+        price: 9,
+        oldPrice: 14,
+        discountPercent: 37,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-33-300x300.jpg",
+        onSale: true,
+      },
+      {
+        id: 7,
+        title: "Allure Luminous Intense Lipstick 0.15oz",
+        price: 20,
+        oldPrice: 24,
+        discountPercent: 17,
+        img: "https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-40-1-300x300.jpg",
+        onSale: true,
+      },
+      {
+        id: 8,
+        title: "Makeup Brushes Artisan Easel Elite Cosmetics",
+        price: 19,
+        oldPrice: 30,
+        discountPercent: 37,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-2.jpg",
+        onSale: true,
+      },
+      // Fill rest with dummy placeholders if needed up to 19
+      {
+        id: 9,
+        title: "Portable Bluetooth Speaker - Crystal Clear Sound",
+        price: 49,
+        oldPrice: 59,
+        discountPercent: 16,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-26.jpg",
+        onSale: true,
+      },
+      {
+        id: 10,
+        title: "Wireless Ergonomic Mouse with Adjustable DPI",
+        price: 29,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-66.jpg",
+        onSale: false,
+      },
+      {
+        id: 11,
+        title: "Smart LED TV 50-inch 4K Ultra HD",
+        price: 498,
+        oldPrice: 550,
+        discountPercent: 10,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-27.jpg",
+        onSale: true,
+      },
+      {
+        id: 12,
+        title: "Noise Cancelling Headphones with Mic",
+        price: 89,
+        oldPrice: 99,
+        discountPercent: 10,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-47-1-700x700.jpg",
+        onSale: true,
+      },
+      {
+        id: 13,
+        title: "Men's Classic Leather Wallet",
+        price: 35,
+        img: "data:image/jpeg;base64,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",
+        onSale: false,
+      },
+      {
+        id: 14,
+        title: "Stylish Sunglasses UV Protection",
+        price: 15,
+        img: "https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-9.jpg",
+        onSale: false,
+      },
+      {
+        id: 15,
+        title: "Portable Power Bank 10000mAh",
+        price: 25,
+        oldPrice: 30,
+        discountPercent: 17,
+        img: "https://hardwaremarket.net/wp-content/uploads/2025/01/Anker-Power-Bank-10000mAh-Power-IQ-3.0-Portable-Charger-with-PD-30W-Max-Output-1.webp",
+        onSale: true,
+      },
+      {
+        id: 16,
+        title: "Cotton Casual T-shirt, Various Colors",
+        price: 14,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFRrP9bRd_ZNJvE9TB7omd6JxNndqpdr8CA&s",
+        onSale: false,
+      },
+      {
+        id: 17,
+        title: "Kitchen Utensil Set - 12 Piece Stainless Steel",
+        price: 59,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-GNlzieq5E9ZjzItADO2s3Mi2U1pZHsOCjw&s",
+        onSale: false,
+      },
+      {
+        id: 18,
+        title: "Adjustable Office Desk Lamp with USB Port",
+        price: 39,
+        oldPrice: 45,
+        discountPercent: 13,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEUU2qvioKfI_RnFMDRgJiah5wmfWmVHQEQ&s",
+        onSale: true,
+      },
+      {
+        id: 19,
+        title: "Fitness Tracker Smart Band with Heart Rate Monitor",
+        price: 55,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIkfWLMkV4mD2FSE9RHyUveKAdoF_LskuUA&s",
+        onSale: false,
+      }
+    ];
+
+    const productsGrid = document.getElementById("productsGrid");
+    const saleOnlyCheckbox = document.getElementById("saleOnly");
+    const btnGridView = document.getElementById("btnGridView");
+    const btnListView = document.getElementById("btnListView");
+
+    // Render products function
+    function renderProducts(view = "grid", saleOnly = false) {
+      // Clear current content
+      productsGrid.innerHTML = "";
+
+      // Filter products depending on 'saleOnly'
+      const filteredProducts = saleOnly ? products.filter(p => p.onSale) : products;
+
+      if (view === "grid") {
+        productsGrid.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6";
+      } else {
+        productsGrid.className = "flex flex-col space-y-6";
+      }
+
+      filteredProducts.forEach((product) => {
+        const prodCard = document.createElement("article");
+        prodCard.className = "product-card relative bg-white rounded-md border border-gray-200 p-3 select-text";
+        if (view === "list") {
+          prodCard.className += " flex space-x-6 items-center";
+        }
+
+        // Discount label
+        if (product.discountPercent) {
+          const discountLabel = document.createElement("div");
+          discountLabel.className = "discount-label";
+          discountLabel.textContent = `-${product.discountPercent}%`;
+          prodCard.appendChild(discountLabel);
+        }
+
+        // Product image container
+        const imgContainer = document.createElement("div");
+        imgContainer.className = "product-image-container";
+        if (view === "list") {
+          imgContainer.style.flex = "0 0 150px";
+        }
+        const img = document.createElement("img");
+        img.src = product.img;
+        img.alt = product.title + " product image, clean white background";
+        img.loading = "lazy";
+        img.onerror = () => {
+          img.src = "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/709ab22e-2562-42f0-916c-8901c308fc57.png";
+        };
+        imgContainer.appendChild(img);
+        prodCard.appendChild(imgContainer);
+
+        // Product details container
+        const details = document.createElement("div");
+        details.className = view === "list" ? "flex-1" : "";
+
+        // Title
+        const title = document.createElement("h3");
+        title.className = "product-title text-sm font-medium leading-tight text-ellipsis";
+        title.title = product.title;
+        title.textContent = product.title;
+        details.appendChild(title);
+
+        // Price container
+        const priceDiv = document.createElement("div");
+        priceDiv.className = "text-base font-extrabold mt-1 flex space-x-2";
+
+        const currentPrice = document.createElement("span");
+        currentPrice.textContent = `$${product.price.toLocaleString()}`;
+        priceDiv.appendChild(currentPrice);
+
+        if (product.oldPrice && product.oldPrice > product.price) {
+          const oldPrice = document.createElement("span");
+          oldPrice.className = "text-gray-400 line-through font-normal";
+          oldPrice.textContent = `$${product.oldPrice.toLocaleString()}`;
+          priceDiv.appendChild(oldPrice);
+        }
+
+        details.appendChild(priceDiv);
+
+        prodCard.appendChild(details);
+
+        productsGrid.appendChild(prodCard);
+      });
+    }
+
+    // Initial render with grid, no filter
+    renderProducts("grid", false);
+
+    // Handlers for sale only filter
+    saleOnlyCheckbox.addEventListener("change", (e) => {
+      renderProducts(currentView, e.target.checked);
+    });
+
+    // Toggle view buttons behavior
+    let currentView = "grid";
+
+    btnGridView.addEventListener("click", () => {
+      if (currentView === "grid") return;
+      currentView = "grid";
+      btnGridView.classList.add("active");
+      btnGridView.setAttribute("aria-pressed", "true");
+      btnListView.classList.remove("active");
+      btnListView.setAttribute("aria-pressed", "false");
+      renderProducts(currentView, saleOnlyCheckbox.checked);
+    });
+
+    btnListView.addEventListener("click", () => {
+      if (currentView === "list") return;
+      currentView = "list";
+      btnListView.classList.add("active");
+      btnListView.setAttribute("aria-pressed", "true");
+      btnGridView.classList.remove("active");
+      btnGridView.setAttribute("aria-pressed", "false");
+      renderProducts(currentView, saleOnlyCheckbox.checked);
+    });
+  </script>
+
+
+</body>
+</html>

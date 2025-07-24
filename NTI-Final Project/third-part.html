@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link  rel="stylesheet" href="first-part.css">
+     <link  rel="stylesheet" href="third-part.css">
+</head>
+<body>
+    <!-- Top Header -->
+  <div class="container-fluid border-b">
+    <div class="flex align-items-center header-section px-4 py-2">
+      
+      <!-- Logo -->
+      <div class=" logo-section">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="Logo" width="130px">
+      </div>
+
+      <!-- Contact Info with better spacing -->
+      <div class="col-auto phone-section">
+        <div class="d-flex align-items-center">
+          <i class="fa-solid fa-phone phone-icon"></i>
+          <div class="phone-info">
+            <p class="mb-0 small text-muted">Contact us 24/7</p>
+            <strong>(+92) 3942 7879</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="col search-container">
+        <div class="search-wrapper" style="max-width: 400px;">
+          <div class="input-group">
+            <select class="form-select" style="max-width: 150px;">
+                <option selected>All Categories</option>
+          <optgroup label="Autopart">
+            <option>Accessories</option>
+            <option>Car Care</option>
+            <option>Car Electronics</option>
+            <option>Equipment</option>
+            <option>Lights</option>
+            <option>Oils & Fluids</option>
+            <option>Tires</option>
+            <option>Wheels</option>
+          </optgroup>
+          <optgroup label="Beauty & Health">
+            <option>Bags & Cases</option>
+            <option>BB Creams</option>
+            <option>Body & Bath</option>
+            <option>Brushes & Tools</option>
+            <option>Hair Care</option>
+            <option>Lipstick</option>
+            <option>Makeup</option>
+            <option>Makeup Palettes</option>
+            <option>Mascara</option>
+            <option>Mask</option>
+            <option>Nail Care</option>
+            <option>Skincare</option>
+            <option>Toner</option>
+          </optgroup>
+          <optgroup label="Electronic">
+            <option>Apple</option>
+            <option>Camera</option>
+            <option>Controller</option>
+            <option>Headphones</option>
+            <option>Smartwatch</option>
+            <option>Speaker</option>
+          </optgroup>
+          <optgroup label="Fashion">
+            <optgroup label="Men">
+              <option>Accessories</option>
+              <option>Hoodies</option>
+              <option>Jackets & Coats</option>
+              <option>Polo Shirts</option>
+              <option>Shirts</option>
+              <option>Shoes</option>
+            </optgroup>
+            <optgroup label="Women">
+              <option>Accessories</option>
+              <option>Dress</option>
+              <option>Shirts</option>
+              <option>Shoes</option>
+              <option>Shorts</option>
+              <option>Skirts</option>
+              <option>Tops</option>
+            </option>
+          </optgroup>
+        </select>
+              
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for products..." autocomplete="off">
+            <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          
+          <!-- Search Dropdown -->
+          <div class="search-dropdown" id="searchDropdown">
+            <div class="search-dropdown-content">
+              <h6 class="search-dropdown-title">Popular search</h6>
+              <div class="popular-searches">
+                <span class="search-tag">smartphone</span>
+                <span class="search-tag">tablet</span>
+                <span class="search-tag">controller</span>
+                <span class="search-tag">furniture</span>
+                <span class="search-tag">laptop</span>
+                <span class="search-tag">playstation</span>
+                <span class="search-tag">womens fashion</span>
+                <span class="search-tag">home & decor</span>
+                <span class="search-tag">camera</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Language Selector -->
+      <div class="col-auto language-currency-section">
+        <div class="dropdown custom-dropdown">
+          <button class="btn btn-light dropdown-toggle custom-arrow d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+            <div class="flag-icon us-flag me-2"></div>
+            English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon us-flag me-2"></div> English</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon spain-flag me-2"></div> Español</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon france-flag me-2"></div> Français</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><div class="flag-icon portugal-flag me-2"></div> Português</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Currency Selector -->
+      <div class="col-auto">
+        <div class="dropdown custom-dropdown">
+          <button class="btn btn-light dropdown-toggle custom-arrow" type="button" data-bs-toggle="dropdown">
+            USD
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD - US Dollar</a></li>
+            <li><a class="dropdown-item" href="#">EUR - Euro</a></li>
+            <li><a class="dropdown-item" href="#">BRL - Brazilian Real</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Currency & Actions -->
+      <div class="col-auto action-buttons">
+        <div class="d-flex align-items-center gap-2">
+
+          <!-- Account -->
+          <a href="#" class="btn btn-light d-flex align-items-center gap-2 hover-red">
+            <i class="fa-solid fa-user"></i>
+            <span class="d-none d-md-inline">Account</span>
+          </a>
+
+          <!-- Wishlist -->
+          <a href="#" class="btn btn-light position-relative hover-red">
+            <i class="fa-solid fa-heart"></i>
+            <span class="badge bg-danger">0</span>
+          </a>
+
+          <!-- Cart -->
+          <a href="#" class="btn btn-light position-relative hover-red">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span class="badge bg-danger">0</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg border-bottom">
+     <div class="container-fluid d-flex align-items-center justify-content-between px-4 gap-3">
+<!-- Categories Button -->
+<div class="d-flex align-items-center">
+  <button class="btn btn-link text-dark fw-bold hover-red p-0">
+    <i class="fa-solid fa-bars me-2"></i>SHOP BY CATEGORIES
+  </button>
+</div>
+
+<!-- Navigation Links -->
+<div class="d-flex align-items-center gap-4 flex-nowrap">
+  <a class="nav-link text-dark hover-red homepages-link p-0" href="#">Homepages <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Categories <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Products <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Pages <span class="nav-arrow"></span></a>
+  <a class="nav-link text-dark hover-red p-0" href="#">About Us</a>
+  <a class="nav-link text-dark hover-red p-0" href="#">Blog</a>
+  <a class="nav-link text-dark hover-red d-flex align-items-center gap-2 p-0" href="#">
+    <img src="img\discount.png" width="20" height="20" alt=""> Best Discount
+  </a>
+</div>
+
+<!-- Recently Viewed -->
+<div class="d-flex align-items-center">
+  <button class="btn btn-link text-dark hover-red p-0">
+    Recently viewed <span class="nav-arrow"></span>
+  </button>
+</div>
+</div> 
+</nav>
+<body class="bg-white text-gray-900 font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Breadcrumb -->
+<nav class="text-sm text-gray-600 px-6 py-4" aria-label="Breadcrumb">
+  <ol class="inline-flex items-center space-x-1 md:space-x-2">
+    <li>
+      <a href="#" class="hover:underline text-black font-semibold">Home</a>
+      <span class="mx-1">›</span>
+    </li>
+    <li>
+      <a href="#" class="hover:underline">Shop</a>
+      <span class="mx-1">›</span>
+    </li>
+    <li>
+      <a href="#" class="hover:underline">Fashion</a>
+      <span class="mx-1">›</span>
+    </li>
+    <li>
+      <a href="#" class="hover:underline">Women</a>
+      <span class="mx-1">›</span>
+    </li>
+    <li>
+      <a href="#" class="hover:underline">Skirts</a>
+      <span class="mx-1">›</span>
+    </li>
+    <li aria-current="page" class="text-gray-400 select-none truncate max-w-xs" style="max-width: 12rem;">
+      Barbie Baseball Hat Cap Berkshire Fashions New
+    </li>
+  </ol>
+</nav>
+
+<!-- Main container -->
+<main class="px-6 flex-grow max-w-7xl mx-auto">
+  <section class="grid grid-cols-12 gap-6">
+
+    <!-- Left thumbnails -->
+    <aside class="col-span-1 flex flex-col space-y-4 thumb-container overflow-y-auto max-h-[600px] border border-gray-100 rounded-md p-2">
+      <button aria-label="Hat image" class="border-2 border-black rounded-md p-1 transition-all focus:outline-none focus:ring-2 focus:ring-black">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-8.jpg" alt="Black ribbed knit hat with a small black fabric label that says four in white lettering" class="w-16 h-16 object-contain" />
+      </button>
+      <button aria-label="Sunglasses black" class="border-2 border-transparent rounded-md p-1 hover:border-gray-300 transition focus:outline-none focus:ring-2 focus:ring-black">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-9.jpg" alt="Black aviator sunglasses with subtle dark brown gradient lenses" class="w-16 h-16 object-contain" />
+      </button>
+      <button aria-label="Sunglasses brown" class="border-2 border-transparent rounded-md p-1 hover:border-gray-300 transition focus:outline-none focus:ring-2 focus:ring-black">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-26.jpg" alt="Brown gradient square sunglasses with black frame" class="w-16 h-16 object-contain" />
+      </button>
+      <button aria-label="Black handbag" class="border-2 border-transparent rounded-md p-1 hover:border-gray-300 transition focus:outline-none focus:ring-2 focus:ring-black">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-20-1.jpg" alt="Small black leather handbag with flap and buckle clasp" class="w-16 h-16 object-contain" />
+      </button>
+    </aside>
+
+    <!-- Main product image -->
+    <section class="col-span-7 border border-gray-200 rounded-lg relative flex items-center justify-center bg-white p-4">
+      <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-8.jpg" alt="Large detailed image of a black ribbed knit hat with a small black fabric label reading four in white text" class="object-contain max-h-[600px]" />
+      <button aria-label="Expand image" title="Expand image" class="absolute top-4 right-4 bg-white shadow rounded p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-black" type="button">
+        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h6M4 4v6m0-6l8 8m8 8h-6m6 0v-6m0 6l-8-8"></path></svg>
+      </button>
+    </section>
+
+    <!-- Product details -->
+    <section class="col-span-4 flex flex-col space-y-6 leading-relaxed max-w-xl">
+      <div>
+        <p class="text-gray-400 uppercase font-semibold tracking-wide text-xs select-none">Zara</p>
+        <h1 class="text-3xl font-extrabold leading-tight mt-1">
+          Barbie Baseball Hat Cap Berkshire Fashions New
+        </h1>
+      </div>
+
+      <div class="flex items-center space-x-2 text-yellow-400 select-none" aria-label="Product rating: 0 out of 5 stars">
+         <div class="rating">★★★☆☆</div>
+        <span class="text-gray-500 text-sm">(0 Reviews)</span>
+        <a href="#write-review" class="ml-3 inline-block text-gray-500 underline hover:text-black text-sm font-medium">Write a review</a>
+      </div>
+
+      <ul role="list" class="space-y-2 text-gray-700">
+        <li class="flex items-center space-x-2">
+          <i class="fa-solid fa-check"></i>
+          <span>Unique Design</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <i class="fa-solid fa-check"></i>
+          <span>Premium Material</span>
+        </li>
+        <li class="flex items-center space-x-2">
+         <i class="fa-solid fa-check"></i>
+          <span>Classic &amp; Versatile</span>
+        </li>
+      </ul>
+
+      <div class="text-4xl font-extrabold text-black">
+        $12
+      </div>
+      <div>
+        <span class="inline-block bg-green-200 text-green-900 text-sm font-semibold px-3 py-1 rounded select-none">In stock</span>
+      </div>
+
+      <!-- Quantity and buttons -->
+      <form class="flex items-center space-x-4" onsubmit="return false;">
+        <div class="flex border border-gray-300 rounded-md overflow-hidden w-max" aria-label="Quantity selector">
+          <button type="button" aria-label="Decrease quantity" id="decreaseBtn" class="w-10 h-12 text-2xl font-bold text-gray-700 hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-black">−</button>
+          <input type="text" inputmode="numeric" pattern="[0-9]*" id="quantityInput" value="1" class="w-14 text-center outline-none text-lg font-semibold" aria-live="polite" aria-atomic="true" aria-label="Quantity input" />
+          <button type="button" aria-label="Increase quantity" id="increaseBtn" class="w-10 h-12 text-2xl font-bold text-gray-700 hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-black">+</button>
+        </div>
+
+        <button type="button" class="bg-black text-white uppercase px-6 py-3 font-semibold tracking-wider rounded-md hover:bg-gray-900 transition focus:outline-none focus:ring-2 focus:ring-black select-none">+ ADD TO CART</button>
+        <button type="button" class="bg-red-600 text-white uppercase px-6 py-3 font-semibold tracking-wider rounded-md hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-red-600 select-none">BUY NOW</button>
+      </form>
+
+      <!-- Wishlist and Compare -->
+      <div class="flex space-x-8 text-gray-400 text-sm mt-2 select-none">
+        <button type="button" aria-label="Add to wishlist" class="flex items-center space-x-2 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-black">
+        <i class="fa-solid fa-clipboard-list"></i>
+          <span>Add to wishlist</span>
+        </button>
+        <button type="button" aria-label="Add to compare" class="flex items-center space-x-2 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-black">
+          <i class="fa-solid fa-code-compare"></i>
+          <span>Add to compare</span>
+        </button>
+      </div>
+
+      <hr class="my-6 border-gray-200" />
+
+      <!-- SKU and categories -->
+      <div class="text-sm space-y-2 text-gray-600">
+        <p><span class="font-semibold text-black">SKU:</span> KGVT48C82S</p>
+        <p><span class="font-semibold text-black">Categories:</span> Shorts, Skirts</p>
+      </div>
+
+      <!-- Social icons -->
+      <div class="flex space-x-4 text-gray-600 text-lg mt-2">
+        <a href="#" aria-label="Share on Facebook" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
+           <i class="fab fa-facebook fa-xl"></i>
+        </a>
+        <a href="#" aria-label="Share on Pinterest" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
+          <i class="fab fa-pinterest fa-xl"></i>
+        </a>
+        <a href="#" aria-label="Share on Twitter" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
+          <i class="fab fa-twitter fa-xl"></i>
+        </a>
+        <a href="#" aria-label="Share on LinkedIn" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
+         <i class="fab fa-linkedin fa-xl"></i>
+        </a>
+        </div>
+        </section>
+        </section>
+        </main>
+        
+
+<div class="bg-white text-gray-900 antialiased font-sans">
+
+  <!-- Top Banner -->
+  <section class="bg-green-200 rounded-md mx-8 my-8 p-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
+    <!-- Left text content -->
+    <div class="flex flex-col max-w-xl">
+      <h1 class="font-extrabold text-2xl md:text-3xl leading-tight mb-3">
+        Earn Cash Back For The Things <br class="hidden md:block" />You Buy Every Where
+      </h1>
+      <div class="flex flex-wrap items-center gap-4">
+        <p class="text-sm text-black/90">
+          Application via Merto. <a href="#" class="underline hover:text-green-800">Terms & Conditions</a>.
+        </p>
+        <button
+          class="bg-green-800 text-white px-5 py-2 rounded-md font-bold hover:bg-green-900 transition"
+          aria-label="View more details about cash back"
+          type="button"
+        >
+          VIEW MORE
+        </button>
+      </div>
+    </div>
+
+    <!-- Right side with card image and payment logos -->
+    <div class="flex items-center gap-6 flex-wrap justify-center md:justify-end flex-1">
+      <div class="max-w-[120px] shrink-0">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de895a56-35d7-4d60-bda4-a7e53d903aa3.png"
+          alt="Illustration of hand holding a blue credit card with chip and contactless symbol"
+          class="w-full h-auto object-contain rounded-md drop-shadow"
+          onerror="this.style.display='none'"
+        />
+      </div>
+      <div class="flex gap-6 items-center flex-wrap justify-center md:justify-start">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ba662b0f-b574-42ca-a5f9-d62bdab37b43.png"
+          alt="Visa logo blue and yellow on white background"
+          class="h-12 object-contain"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9d931ec2-222b-4505-823a-b3da27344bdd.png"
+          alt="MasterCard logo with red and yellow overlapping circles on white background"
+          class="h-12 object-contain"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76d595de-a10e-47b7-ac52-a7d254dac454.png"
+          alt="American Express logo in blue and white"
+          class="h-12 object-contain"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f91d9a82-f690-4e32-b209-77e21e43e0f0.png"
+          alt="PayPal logo in blue with stylized P on white background"
+          class="h-12 object-contain"
+          onerror="this.style.display='none'"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs Section -->
+  <section class="mx-8 my-8 max-w-7xl">
+    <nav aria-label="Product details tabs" class="border-b border-gray-300 mb-6 flex gap-8 overflow-x-auto horizontal-scroll">
+      <button class="tab-button active" data-tab="description" type="button" role="tab" aria-selected="true" aria-controls="description-panel" id="description-tab">
+        Description
+      </button>
+      <button class="tab-button inactive" data-tab="specifications" type="button" role="tab" aria-selected="false" aria-controls="specifications-panel" id="specifications-tab">
+        Specifications
+      </button>
+      <button class="tab-button inactive" data-tab="reviews" type="button" role="tab" aria-selected="false" aria-controls="reviews-panel" id="reviews-tab">
+        Reviews (0)
+      </button>
+    </nav>
+
+    <!-- Tab content container with ARIA and roles -->
+    <div>
+      <!-- Description Tab panel -->
+      <article id="description-panel" role="tabpanel" tabindex="0" aria-labelledby="description-tab" class="tab-panel">
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Left side description text -->
+          <div class="md:flex-1 text-gray-900 text-base leading-relaxed">
+            <p>
+              Compellingly grow performance based mindshare through parallel potentialities. Rapidiously underwhelm top-line catalysts for change before best-of-breed materials.
+              Competently brand timely catalysts for change through sustainable systems. Completely expedite ubiquitous bandwidth after integrated action items. Progressively
+              transform leading-edge supply chains whereas flexible niche markets.
+            </p>
+          </div>
+          <!-- Right side details table with subtle backgrounds -->
+          <div class="md:flex-1 max-w-xl bg-gray-100 rounded-md shadow-md divide-y divide-gray-200">
+            <!-- Single row -->
+            <div class="px-6 py-4 font-semibold bg-gray-200 border-b border-gray-300 flex justify-between items-center">
+              <span>Shipping</span>
+              <span class="font-normal text-gray-800 text-sm max-w-[60%] text-left">We currently offer free shipping worldwide on all orders over $100.</span>
+            </div>
+            <div class="px-6 py-4 border-b border-gray-300 flex justify-between items-center">
+              <span class="font-semibold">Sizing</span>
+              <span class="font-normal text-gray-800 text-sm max-w-[60%] text-left">Fits true to size. Do you need size advice?</span>
+            </div>
+            <div class="px-6 py-4 border-b border-gray-300 flex justify-between items-center">
+              <span class="font-semibold">Return & exchange</span>
+              <span class="font-normal text-gray-800 text-sm max-w-[60%] text-left">
+                If you are not satisfied with your purchase you can return it to us within 14 days for an exchange or refund.
+              </span>
+            </div>
+            <div class="px-6 py-4 flex justify-between items-center">
+              <span class="font-semibold">Assistance</span>
+              <span class="font-normal text-gray-800 text-sm max-w-[60%] text-left">
+                Contact us on (+44) 555 88 65, or email us at support@themesky.com
+              </span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Specifications Tab panel -->
+      <article id="specifications-panel" role="tabpanel" tabindex="0" aria-labelledby="specifications-tab" hidden class="tab-panel px-4 py-6 border rounded-md bg-gray-50 text-gray-700">
+        <p>This section is under construction. Specifications details will be added here.</p>
+      </article>
+
+      <!-- Reviews Tab panel -->
+      <article id="reviews-panel" role="tabpanel" tabindex="0" aria-labelledby="reviews-tab" hidden class="tab-panel px-4 py-6 border rounded-md bg-gray-50 text-gray-700">
+        <p>No reviews yet. Be the first to leave a review!</p>
+      </article>
+    </div>
+  </section>
+  </div>
+  
+   
+   
+<body>
+  <h2>Related products</h2>
+  <section class="related-products-container" aria-label="Related products">
+    <article class="product-card" tabindex="0">
+      <div class="product-image">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b87f5fdb-476e-40c5-8409-ee5b7961a662.png" 
+          alt="Light gray unisex hoodie with 'PINK' text on front, casual streetwear style" 
+          onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/753998e1-9f3d-4b9b-bb6f-67d96cd6ba0c.png';" />
+      </div>
+      <div class="product-name">Unbothered Unisex Hoodie Sarcastic Pullover - White</div>
+      <div class="product-price">$59</div>
+    </article>
+
+    <article class="product-card" tabindex="0">
+      <div class="product-image">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae72cb18-7da9-4193-ba8e-d3731dd655b2.png" 
+          alt="Side profile of Nike Air Max pre-day sneakers in black metallic silver white color" 
+          onerror="this.onerror=null;this.src='https://placehold.co/300x360?text=Image+not+available';" />
+      </div>
+      <div class="product-name">Nike Air Max Pre-Day Black Metallic Silver White</div>
+      <div class="product-price">$124</div>
+    </article>
+
+    <article class="product-card" tabindex="0">
+      <div class="product-image">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7630756d-28d2-4a85-8f21-35db69272f31.png" 
+          alt="Men's long sleeve classic-fit lodge shirt in red and black plaid pattern" 
+          onerror="this.onerror=null;this.src='https://placehold.co/300x360?text=Image+not+available';" />
+      </div>
+      <div class="product-name">Pendleton Men's Long Sleeve Classic–fit Lodge Shirt</div>
+      <div class="product-price">$69</div>
+    </article>
+
+    <article class="product-card" tabindex="0">
+      <div class="product-image">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b9b99be2-1823-4776-a4e2-fb70d68acf3d.png" 
+          alt="Athletics embroidered relaxed hoodie in black with minimal front logo" 
+          onerror="this.onerror=null;this.src='https://placehold.co/300x360?text=Image+not+available';" />
+      </div>
+      <div class="product-name">Athletics Embroidered Relaxed Hoodie - Black</div>
+      <div class="product-price">$165</div>
+    </article>
+
+    <article class="product-card" tabindex="0">
+      <div class="product-image">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/658abe1d-439b-45fb-933b-f1edd5142609.png" 
+          alt="Oversized unisex cotton chunky sweater in brick blue color, knit fabric" 
+          onerror="this.onerror=null;this.src='https://placehold.co/300x360?text=Image+not+available';" />
+      </div>
+      <div class="product-name">Oversize Unisex Cotton Chunky Sweater Brick</div>
+      <div class="product-price">$81</div>
+    </article>
+  </section>
+
+
+
+
+
+   <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 px-6 sm:px-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-y-10 gap-x-8">
+
+      <!-- Branding & Contact Info -->
+      <div class="col-span-2">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" width="120px">
+        <address class="mt-6 not-italic text-gray-400 space-y-3 text-sm">
+          <p class="flex items-start gap-3"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0 mt-[3px]">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0L6.343 16.657a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>29 SE 2nd Ave, Miami Florida 33131, United States</p>
+          <p class="flex items-center gap-3"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0a2.25 2.25 0 00-2.25-2.25h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.75a.75.75 0 01-.75.75h-18a.75.75 0 01-.75-.75v-.75">
+              </path>
+            </svg>info@example.com</p>
+          <p class="mt-3 font-semibold text-white text-lg">(+92) 3942 7879</p>
+        </address>
+      </div>
+
+      <!-- Shopping Links -->
+      <div>
+        <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">SHOPPING</h3>
+        <nav class="space-y-3 text-gray-400 text-sm" aria-label="Shopping links">
+          <a href="#" class="block hover:text-white">Wishlist</a>
+          <a href="#" class="block hover:text-white">Shop by Brand</a>
+          <a href="#" class="block hover:text-white">Offers</a>
+          <a href="#" class="block hover:text-white">Track order</a>
+          <a href="#" class="block hover:text-white">Size Guide</a>
+        </nav>
+      </div>
+
+      <!-- Information Links -->
+      <div>
+        <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">INFOMATION</h3>
+        <nav class="space-y-3 text-gray-400 text-sm" aria-label="Information links">
+          <a href="#" class="block hover:text-white">Track Order</a>
+          <a href="#" class="block hover:text-white">Shipping & Returns</a>
+          <a href="#" class="block hover:text-white">About us</a>
+          <a href="#" class="block hover:text-white">Help</a>
+          <a href="#" class="block hover:text-white">Gift Cards</a>
+        </nav>
+      </div>
+
+      <!-- Account Links -->
+      <div>
+        <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">ACCOUNT</h3>
+        <nav class="space-y-3 text-gray-400 text-sm" aria-label="Account links">
+          <a href="#" class="block hover:text-white">Cart</a>
+          <a href="#" class="block hover:text-white">My account</a>
+          <a href="#" class="block hover:text-white">My orders</a>
+          <a href="#" class="block hover:text-white">Wishlist</a>
+          <a href="#" class="block hover:text-white">Affiliate Program</a>
+        </nav>
+      </div>
+
+      <!-- Newsletter & Social -->
+      <div class=" w-[500px]max-w-md">
+         <h3 class="font-bold text-white mb-5 text-lg"> Let’s keep in touch </h3>
+         <form class="mb-6" aria-label="Subscribe to newsletter"> 
+        <div class="relative"> 
+        <!-- Input Field --> <input type="email" placeholder="Enter your email address" aria-label="Email address" class="w-full rounded border border-gray-700 bg-transparent px-4 pr-12 py-2 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" />
+         <button
+    type="submit"
+    aria-label="Subscribe"
+    title="Subscribe"
+    class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none"
+  >
+    <i class="fa-solid fa-arrow-right-long"></i>
+  </button>
+</div><br>
+      
+
+        <div class="flex gap-6 text-gray-400 icon" aria-label="Social media links">
+          <a href="#" aria-label="Facebook" class="hover:text-white" title="Facebook">
+           <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="TikTok" class="hover:text-white" title="TikTok">
+           <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="#" aria-label="X (Twitter)" class="hover:text-white" title="X (Twitter)">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" aria-label="YouTube" class="hover:text-white" title="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-white" title="Instagram">
+           
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra links and info container -->
+    <div
+      class="max-w-7xl mx-auto mt-10 border border-gray-800 rounded p-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-400 text-sm select-none">
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <p class="font-semibold text-white">Didn't find what you were looking for?</p>
+          <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Contact Us</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-face-smile"></i>
+        <div>
+          <p class="font-semibold text-white">How can we help you today?</p>
+          <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Help Center</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-comment-dots"></i>
+        <div>
+          <p class="font-semibold text-white">We’d love to hear what you think!</p>
+          <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Give Feedback</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright and payment methods -->
+    <div
+      class="max-w-7xl mx-auto mt-12 flex flex-col-reverse md:flex-row justify-between items-center space-y-6 md:space-y-0 text-gray-500 text-xs select-none">
+      <p>Copyright © Merto. All Rights Reserved</p>
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" width="250px">
+    </div>
+  </footer>
+  </body>
+
+
+  <script>
+    // Tabs functionality
+    document.querySelectorAll(".tab-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedTab = button.getAttribute("data-tab");
+
+        // Remove 'active' class from all buttons and add the 'inactive' class
+        document.querySelectorAll(".tab-button").forEach((btn) => {
+          btn.classList.remove("active");
+          btn.classList.add("inactive");
+          btn.setAttribute("aria-selected", "false");
+        });
+
+        // Hide all tab panels
+        document.querySelectorAll(".tab-panel").forEach((panel) => {
+          panel.hidden = true;
+        });
+
+        // Activate clicked tab button and corresponding panel
+        button.classList.add("active");
+        button.classList.remove("inactive");
+        button.setAttribute("aria-selected", "true");
+
+        const panelId = selectedTab + "-panel";
+        const panel = document.getElementById(panelId);
+        if(panel){
+          panel.hidden = false;
+          // Focus the panel for accessibility
+          panel.focus();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
