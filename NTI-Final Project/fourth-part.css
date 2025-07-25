@@ -1,0 +1,38 @@
+    a.underline-link {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      color: #22c55e; 
+    }
+    a.underline-link:hover {
+      color: #16a34a; 
+    }
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      cursor: pointer;
+      transition: stroke 0.2s ease, fill 0.2s ease;
+    }
+    .social-icon:hover {
+      stroke: #000;
+      fill: #000;
+    }
+     input:focus, textarea:focus {
+      outline: 2px solid #22c55e;
+      outline-offset: 2px;
+    }
+    button:focus {
+      outline: 2px solid #22c55e;
+      outline-offset: 2px;
+    }
+    .img-container {
+      @apply rounded-lg overflow-hidden shadow-md max-w-full h-auto;
+    }
+    .img-container img {
+      @apply w-full object-cover block;
+      aspect-ratio: 16 / 9;
+    }
