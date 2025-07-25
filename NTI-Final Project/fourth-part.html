@@ -1,190 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1</title>
-     <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link  rel="stylesheet" href="first-part.css">
-     <link  rel="stylesheet" href="fourth-part.css" >
-    <script src="script.js"> </script>
-</head>
-
-
-
-<body class="bg-white text-gray-900 font-sans antialiased min-h-screen flex flex-col">
-
-<!-- Breadcrumb -->
-<nav class="text-sm text-gray-600 px-6 py-4" aria-label="Breadcrumb">
-  <ol class="inline-flex items-center space-x-1 md:space-x-2">
-    <li>
-      <a href="#" class="hover:underline text-black font-semibold">Home</a>
-      <span class="mx-1">›</span>
-    </li>
-    <li>
-      <a href="#" class="hover:underline">Shop</a>
-      <span class="mx-1">›</span>
-    </li>
-    <li>
-      <a href="#" class="hover:underline">Fashion</a>
-      <span class="mx-1">›</span>
-    </li>
-    <li>
-      <a href="#" class="hover:underline">Women</a>
-      <span class="mx-1">›</span>
-    </li>
-    <li>
-      <a href="#" class="hover:underline">Skirts</a>
-      <span class="mx-1">›</span>
-    </li>
-    <li aria-current="page" class="text-gray-400 select-none truncate max-w-xs" style="max-width: 12rem;">
-      Barbie Baseball Hat Cap Berkshire Fashions New
-    </li>
-  </ol>
-</nav>
-
-<!-- Main container -->
-<main class="px-6 flex-grow max-w-7xl mx-auto">
-  <section class="grid grid-cols-12 gap-6">
-
-    <!-- Left thumbnails -->
-    <aside class="col-span-1 flex flex-col space-y-4 thumb-container overflow-y-auto max-h-[600px] border border-gray-100 rounded-md p-2">
-      <button aria-label="Hat image" class="border-2 border-black rounded-md p-1 transition-all focus:outline-none focus:ring-2 focus:ring-black">
-        <img src="https://placehold.co/80x80/000000/FFFFFF?text=Hat" alt="Black ribbed knit hat with a small black fabric label that says four in white lettering" class="w-16 h-16 object-contain" />
-      </button>
-      <button aria-label="Sunglasses black" class="border-2 border-transparent rounded-md p-1 hover:border-gray-300 transition focus:outline-none focus:ring-2 focus:ring-black">
-        <img src="https://placehold.co/80x80/000000/FFFFFF?text=Blk+Sunglasses" alt="Black aviator sunglasses with subtle dark brown gradient lenses" class="w-16 h-16 object-contain" />
-      </button>
-      <button aria-label="Sunglasses brown" class="border-2 border-transparent rounded-md p-1 hover:border-gray-300 transition focus:outline-none focus:ring-2 focus:ring-black">
-        <img src="https://placehold.co/80x80/7c4f30/ffffff?text=Brown+Sunglasses" alt="Brown gradient square sunglasses with black frame" class="w-16 h-16 object-contain" />
-      </button>
-      <button aria-label="Black handbag" class="border-2 border-transparent rounded-md p-1 hover:border-gray-300 transition focus:outline-none focus:ring-2 focus:ring-black">
-        <img src="https://placehold.co/80x80/000000/FFFFFF?text=Bag" alt="Small black leather handbag with flap and buckle clasp" class="w-16 h-16 object-contain" />
-      </button>
-    </aside>
-
-    <!-- Main product image -->
-    <section class="col-span-7 border border-gray-200 rounded-lg relative flex items-center justify-center bg-white p-4">
-      <img src="https://placehold.co/600x600/000000/ffffff?text=Black+Ribbed+Knit+Hat" alt="Large detailed image of a black ribbed knit hat with a small black fabric label reading four in white text" class="object-contain max-h-[600px]" />
-      <button aria-label="Expand image" title="Expand image" class="absolute top-4 right-4 bg-white shadow rounded p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-black" type="button">
-        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h6M4 4v6m0-6l8 8m8 8h-6m6 0v-6m0 6l-8-8"></path></svg>
-      </button>
-    </section>
-
-    <!-- Product details -->
-    <section class="col-span-4 flex flex-col space-y-6 leading-relaxed max-w-xl">
-      <div>
-        <p class="text-gray-400 uppercase font-semibold tracking-wide text-xs select-none">Zara</p>
-        <h1 class="text-3xl font-extrabold leading-tight mt-1">
-          Barbie Baseball Hat Cap Berkshire Fashions New
-        </h1>
-      </div>
-
-      <div class="flex items-center space-x-2 text-yellow-400 select-none" aria-label="Product rating: 0 out of 5 stars">
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-          <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.546z"/>
-        </svg>
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-          <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.546z"/>
-        </svg>
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-          <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.546z"/>
-        </svg>
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-          <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.546z"/>
-        </svg>
-        <svg class="w-5 h-5 fill-none stroke-yellow-400" viewBox="0 0 20 20" aria-hidden="true" focusable="false" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-          <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.546z" />
-        </svg>
-        <span class="text-gray-500 text-sm">(0 Reviews)</span>
-        <a href="#write-review" class="ml-3 inline-block text-gray-500 underline hover:text-black text-sm font-medium">Write a review</a>
-      </div>
-
-      <ul role="list" class="space-y-2 text-gray-700">
-        <li class="flex items-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 13l4 4L19 7" />
-          </svg>
-          <span>Unique Design</span>
-        </li>
-        <li class="flex items-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 13l4 4L19 7" />
-          </svg>
-          <span>Premium Material</span>
-        </li>
-        <li class="flex items-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 13l4 4L19 7" />
-          </svg>
-          <span>Classic &amp; Versatile</span>
-        </li>
-      </ul>
-
-      <div class="text-4xl font-extrabold text-black">
-        $12
-      </div>
-      <div>
-        <span class="inline-block bg-green-200 text-green-900 text-sm font-semibold px-3 py-1 rounded select-none">In stock</span>
-      </div>
-
-      <!-- Quantity and buttons -->
-      <form class="flex items-center space-x-4" onsubmit="return false;">
-        <div class="flex border border-gray-300 rounded-md overflow-hidden w-max" aria-label="Quantity selector">
-          <button type="button" aria-label="Decrease quantity" id="decreaseBtn" class="w-10 h-12 text-2xl font-bold text-gray-700 hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-black">−</button>
-          <input type="text" inputmode="numeric" pattern="[0-9]*" id="quantityInput" value="1" class="w-14 text-center outline-none text-lg font-semibold" aria-live="polite" aria-atomic="true" aria-label="Quantity input" />
-          <button type="button" aria-label="Increase quantity" id="increaseBtn" class="w-10 h-12 text-2xl font-bold text-gray-700 hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-black">+</button>
+    <title>4</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="first-part.css">
+    <link rel="stylesheet" href="fourth-part.css">
+  </head>
+  <body>
+    <!-- Top Header -->
+    <div class="container-fluid border-b">
+      <div class="flex align-items-center header-section px-4 py-2">
+        <!-- Logo -->
+        <div class=" logo-section">
+          <img src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="Logo" width="130px">
         </div>
-
-        <button type="button" class="bg-black text-white uppercase px-6 py-3 font-semibold tracking-wider rounded-md hover:bg-gray-900 transition focus:outline-none focus:ring-2 focus:ring-black select-none">+ ADD TO CART</button>
-        <button type="button" class="bg-red-600 text-white uppercase px-6 py-3 font-semibold tracking-wider rounded-md hover:bg-red-700 transition focus:outline-none focus:ring-2 focus:ring-red-600 select-none">BUY NOW</button>
-      </form>
-
-      <!-- Wishlist and Compare -->
-      <div class="flex space-x-8 text-gray-400 text-sm mt-2 select-none">
-        <button type="button" aria-label="Add to wishlist" class="flex items-center space-x-2 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-black">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M12 21c-4.418 0-8-3.134-8-7v-3c0-3.866 3.582-7 8-7s8 3.134 8 7v3c0 3.866-3.582 7-8 7z"/>
-            <path d="M12 11v10"/>
-          </svg>
-          <span>Add to wishlist</span>
-        </button>
-        <button type="button" aria-label="Add to compare" class="flex items-center space-x-2 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-black">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rotate-90" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M9 3v18m6-18v18"/>
-          </svg>
-          <span>Add to compare</span>
-        </button>
+        <!-- Contact Info with better spacing -->
+        <div class="col-auto phone-section">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-phone phone-icon"></i>
+            <div class="phone-info">
+              <p class="mb-0 small text-muted">Contact us 24/7</p>
+              <strong>(+92) 3942 7879</strong>
+            </div>
+          </div>
+        </div>
+        <!-- Search Bar -->
+        <div class="col search-container">
+          <div class="search-wrapper" style="max-width: 400px;">
+            <div class="input-group">
+              <select class="form-select" style="max-width: 150px;">
+                <option selected>All Categories</option>
+                <optgroup label="Autopart">
+                  <option>Accessories</option>
+                  <option>Car Care</option>
+                  <option>Car Electronics</option>
+                  <option>Equipment</option>
+                  <option>Lights</option>
+                  <option>Oils & Fluids</option>
+                  <option>Tires</option>
+                  <option>Wheels</option>
+                </optgroup>
+                <optgroup label="Beauty & Health">
+                  <option>Bags & Cases</option>
+                  <option>BB Creams</option>
+                  <option>Body & Bath</option>
+                  <option>Brushes & Tools</option>
+                  <option>Hair Care</option>
+                  <option>Lipstick</option>
+                  <option>Makeup</option>
+                  <option>Makeup Palettes</option>
+                  <option>Mascara</option>
+                  <option>Mask</option>
+                  <option>Nail Care</option>
+                  <option>Skincare</option>
+                  <option>Toner</option>
+                </optgroup>
+                <optgroup label="Electronic">
+                  <option>Apple</option>
+                  <option>Camera</option>
+                  <option>Controller</option>
+                  <option>Headphones</option>
+                  <option>Smartwatch</option>
+                  <option>Speaker</option>
+                </optgroup>
+                <optgroup label="Fashion">
+                <optgroup label="Men">
+                  <option>Accessories</option>
+                  <option>Hoodies</option>
+                  <option>Jackets & Coats</option>
+                  <option>Polo Shirts</option>
+                  <option>Shirts</option>
+                  <option>Shoes</option>
+                </optgroup>
+                <optgroup label="Women">
+                  <option>Accessories</option>
+                  <option>Dress</option>
+                  <option>Shirts</option>
+                  <option>Shoes</option>
+                  <option>Shorts</option>
+                  <option>Skirts</option>
+                  <option>Tops</option>
+                  </option>
+                </optgroup>
+              </select>
+              <input type="text" id="searchInput" class="form-control" placeholder="Search for products..." autocomplete="off">
+              <button class="btn btn-dark">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <!-- Search Dropdown -->
+            <div class="search-dropdown" id="searchDropdown">
+              <div class="search-dropdown-content">
+                <h6 class="search-dropdown-title">Popular search</h6>
+                <div class="popular-searches">
+                  <span class="search-tag">smartphone</span>
+                  <span class="search-tag">tablet</span>
+                  <span class="search-tag">controller</span>
+                  <span class="search-tag">furniture</span>
+                  <span class="search-tag">laptop</span>
+                  <span class="search-tag">playstation</span>
+                  <span class="search-tag">womens fashion</span>
+                  <span class="search-tag">home & decor</span>
+                  <span class="search-tag">camera</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Language Selector -->
+        <div class="col-auto language-currency-section">
+          <div class="dropdown custom-dropdown">
+            <button class="btn btn-light dropdown-toggle custom-arrow d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+              <div class="flag-icon us-flag me-2"></div> English
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="flag-icon us-flag me-2"></div> English
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="flag-icon spain-flag me-2"></div> Español
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="flag-icon france-flag me-2"></div> Français
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="flag-icon portugal-flag me-2"></div> Português
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Currency Selector -->
+        <div class="col-auto">
+          <div class="dropdown custom-dropdown">
+            <button class="btn btn-light dropdown-toggle custom-arrow" type="button" data-bs-toggle="dropdown"> USD </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">USD - US Dollar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">EUR - Euro</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">BRL - Brazilian Real</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Currency & Actions -->
+        <div class="col-auto action-buttons">
+          <div class="d-flex align-items-center gap-2">
+            <!-- Account -->
+            <a href="#" class="btn btn-light d-flex align-items-center gap-2 hover-red">
+              <i class="fa-solid fa-user"></i>
+              <span class="d-none d-md-inline">Account</span>
+            </a>
+            <!-- Wishlist -->
+            <a href="#" class="btn btn-light position-relative hover-red">
+              <i class="fa-solid fa-heart"></i>
+              <span class="badge bg-danger">0</span>
+            </a>
+            <!-- Cart -->
+            <a href="#" class="btn btn-light position-relative hover-red">
+              <i class="fa-solid fa-shopping-cart"></i>
+              <span class="badge bg-danger">0</span>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <hr class="my-6 border-gray-200" />
-
-      <!-- SKU and categories -->
-      <div class="text-sm space-y-2 text-gray-600">
-        <p><span class="font-semibold text-black">SKU:</span> KGVT48C82S</p>
-        <p><span class="font-semibold text-black">Categories:</span> Shorts, Skirts</p>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container-fluid d-flex align-items-center justify-content-between px-4 gap-3">
+        <!-- Categories Button -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-link text-dark fw-bold hover-red p-0">
+            <i class="fa-solid fa-bars me-2"></i>SHOP BY CATEGORIES </button>
+        </div>
+        <!-- Navigation Links -->
+        <div class="d-flex align-items-center gap-4 flex-nowrap">
+          <a class="nav-link text-dark hover-red homepages-link p-0" href="#">Homepages <span class="nav-arrow"></span>
+          </a>
+          <a class="nav-link text-dark hover-red p-0" href="#">Categories <span class="nav-arrow"></span>
+          </a>
+          <a class="nav-link text-dark hover-red p-0" href="#">Products <span class="nav-arrow"></span>
+          </a>
+          <a class="nav-link text-dark hover-red p-0" href="#">Pages <span class="nav-arrow"></span>
+          </a>
+          <a class="nav-link text-dark hover-red p-0" href="#">About Us</a>
+          <a class="nav-link text-dark hover-red p-0" href="#">Blog</a>
+          <a class="nav-link text-dark hover-red d-flex align-items-center gap-2 p-0" href="#">
+            <img src="img\discount.png" width="20" height="20" alt=""> Best Discount </a>
+        </div>
+        <!-- Recently Viewed -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-link text-dark hover-red p-0"> Recently viewed <span class="nav-arrow"></span>
+          </button>
+        </div>
       </div>
-
-      <!-- Social icons -->
-      <div class="flex space-x-4 text-gray-600 text-lg mt-2">
-        <a href="#" aria-label="Share on Facebook" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5" aria-hidden="true">
-            <path d="M22 12a10 10 0 10-11.6 9.85v-6.96h-2.13v-2.89h2.13V9.28c0-2.1 1.25-3.27 3.17-3.27.92 0 1.88.17 1.88.17v2.07h-1.06c-1.04 0-1.36.65-1.36 1.32v1.58h2.31l-.37 2.89h-1.94v6.96A10.02 10.02 0 0022 12z"/>
-          </svg>
-        </a>
-        <a href="#" aria-label="Share on Pinterest" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5" aria-hidden="true">
-            <path d="M12 2C6.5 2 2.4 6.6 2.4 11.6c0 3.3 1.8 6.2 4.5 7.3-.08-.62-.15-1.57 0-2.25.17-.75 1.1-4.88 1.1-4.88s-.28-.56-.28-1.38c0-1.28.74-2.24 1.67-2.24.79 0 1.17.59 1.17 1.3 0 .8-.5 2-0.77 3.12-.22.94.45 1.7 1.35 1.7 1.62 0 2.88-1.68 2.88-4.1 0-2.15-1.55-3.64-3.77-3.64-2.57 0-4.08 1.9-4.08 3.87 0 .77.3 1.6.67 2.05.07.08.08.15.05.24-.06.25-.19.8-.22.91-.04.14-.13.18-.3.11-1.14-.52-1.84-2.17-1.84-3.5 0-2.86 2.08-5.48 6-5.48 3.13 0 5.54 2.25 5.54 5.25 0 3.13-1.96 5.66-4.67 5.66-0.91 0-1.57-.5-1.83-1.07l-.5 1.9c-.18.7-.66 1.58-.99 2.12.75.23 1.54.36 2.36.36 5.5 0 10-4.5 10-10S17.5 2 12 2z" />
-          </svg>
-        </a>
-        <a href="#" aria-label="Share on Twitter" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5" aria-hidden="true">
-            <path d="M23 3a10.9 10.9 0 01-3.14.86A4.48 4.48 0 0022.43.36a9.14 9.14 0 01-2.88 1.1A4.52 4.52 0 0016.63 0c-2.48 0-4.5 2.11-4.5 4.71 0 .37.04.73.12 1.08A12.88 12.88 0 013 1.19a4.64 4.64 0 00-.61 2.37c0 1.63.83 3.08 2.1 3.93A4.44 4.44 0 012 7.68v.06a4.47 4.47 0 003.6 4.6 4.56 4.56 0 01-2.04.08 4.53 4.53 0 004.2 3.18 9.01 9.01 0 01-5.6 1.9A8.33 8.33 0 010 19.72a12.7 12.7 0 006.9 2.04c8.3 0 12.84-7.01 12.84-13.09 0-.2 0-.43-.01-.64A9.14 9.14 0 0023 3z"/>
-          </svg>
-        </a>
-        <a href="#" aria-label="Share on LinkedIn" class="hover:text-black focus:outline-none focus:ring-2 focus:ring-black">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24
+    </nav>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact Us</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body class="bg-white text-black min-h-screen flex flex-col items-center px-4 md:px-0">
+        <main class="max-w-5xl w-full pt-12 pb-20 flex flex-col items-center gap-10">
+          <h1 class="text-4xl font-extrabold leading-tight text-center">Contact us</h1>
+          <address class="not-italic text-center text-sm text-gray-500"> 34 Main Street, Los Angeles 9021 <br />United States </address>
+          <!-- Contact information row -->
+          <section class="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center sm:text-left px-4 sm:px-0">
+            <!-- Customer service -->
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <i class="fa-solid fa-phone-volume"></i>
+              <strong>Customer service</strong>
+              <a href="tel:+9239427879" class="hover:underline text-sm font-semibold text-black">+92 3942 7879</a>
+              <p class="text-xs text-gray-400">Call us from 8am to 8pm</p>
+            </div>
+            <!-- Chat with us -->
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <i class="fa-solid fa-comment"></i>
+              <strong>Chat with us</strong>
+              <a href="#" class="underline-link text-sm font-semibold flex items-center gap-2">
+                <span class="inline-block w-3 h-3 rounded-full bg-green-500"></span> Live Chat </a>
+              <p class="text-xs text-gray-400">Daily: 8 am to 11 pm</p>
+            </div>
+            <!-- Write to us -->
+            <div class="flex flex-col items-center sm:items-start gap-2 break-words">
+              <i class="fa-solid fa-envelope"></i>
+              <strong>Write to us</strong>
+              <a href="mailto:contact@example.com" class="underline hover:no-underline text-sm font-semibold text-black"> contact@example.com </a>
+            </div>
+            <!-- Follow us -->
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <i class="fa-solid fa-user-plus"></i>
+              <strong>Follow us</strong>
+              <div class="flex flex-wrap gap-3 text-gray-600">
+                <!-- Facebook -->
+                <a href="#" aria-label="Facebook" class="social-icon" title="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <!-- TikTok -->
+                <a href="#" aria-label="TikTok" class="social-icon" title="TikTok">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <!-- YouTube -->
+                <a href="#" aria-label="YouTube" class="social-icon" title="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="#" aria-label="Twitter" class="social-icon" title="Twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="#" aria-label="Instagram" class="social-icon" title="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- Contact form -->
+          <section class="w-full max-w-5xl px-4 sm:px-0">
+            <h2 class="text-center font-semibold text-xl mb-6">Do you have some questions?</h2>
+            <form id="contactForm" class="flex flex-col gap-4" novalidate>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" name="fullname" id="fullname" placeholder="Name and Surname *" required class="bg-gray-100 rounded-md border border-transparent placeholder-gray-500 text-gray-900 px-4 py-3 transition focus:border-green-500 focus:ring focus:ring-green-300 focus:ring-opacity-50" aria-label="Name and Surname" />
+                <input type="email" name="email" id="email" placeholder="Email *" required class="bg-gray-100 rounded-md border border-transparent placeholder-gray-500 text-gray-900 px-4 py-3 transition focus:border-green-500 focus:ring focus:ring-green-300 focus:ring-opacity-50" aria-label="Email" />
+              </div>
+              <input type="text" name="subject" id="subject" placeholder="Subject *" required class="bg-gray-100 rounded-md border border-transparent placeholder-gray-500 text-gray-900 px-4 py-3 transition focus:border-green-500 focus:ring focus:ring-green-300 focus:ring-opacity-50" aria-label="Subject" />
+              <textarea name="message" id="message" rows="6" placeholder="Message" class="bg-gray-100 rounded-md border border-transparent placeholder-gray-500 text-gray-900 px-4 py-3 resize-none transition focus:border-green-500 focus:ring focus:ring-green-300 focus:ring-opacity-50" aria-label="Message"></textarea>
+              <button type="submit" class="w-full bg-black text-white uppercase font-bold py-3 rounded-md hover:bg-gray-900 transition focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2" aria-label="Submit contact form"> Get in touch </button>
+            </form>
+          </section>
+        </main>
+        <!-- Google Map Embed -->
+        <div class="w-full h-[350px] sm:h-[450px]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27444158835!2d-118.69192025995346!3d34.02016130622598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75dd041534d%3A0x4cdad007c06d8264!2sLos%20Angeles%2C%20California%2C%20USA!5e0!3m2!1sen!2s!4v1703763709195!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Los Angeles, California, USA"></iframe>
+        </div>
+        <main class="max-w-7xl mx-auto p-6 md:p-12">
+          <h1 class="text-2xl md:text-3xl font-bold text-center mb-10">Stores around the world</h1>
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Los Angeles -->
+            <article>
+              <div class="img-container mb-4">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/about-2.jpg" alt="Modern store facade with dark tiled exterior and illuminated interior showcasing decorative objects in Los Angeles" loading="lazy" onerror="this.style.display='none';" />
+              </div>
+              <h2 class="text-xl font-semibold mb-2">Los Angeles</h2>
+              <address class="not-italic text-gray-500 mb-4 leading-relaxed"> 34 Main Street, Los Angeles 9021 <br /> United States </address>
+              <p class="text-gray-900 font-medium">+02 1234 567 88</p>
+            </article>
+            <!-- New York -->
+            <article>
+              <div class="img-container mb-4">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/about-3.jpg" alt="City street corner with modern store front, people crossing zebra crossing and urban city vibe in New York" loading="lazy" onerror="this.style.display='none';" />
+              </div>
+              <h2 class="text-xl font-semibold mb-2">New York</h2>
+              <address class="not-italic text-gray-500 mb-4 leading-relaxed"> 515 Broadway 10015 New York <br /> United States </address>
+              <p class="text-gray-900 font-medium">+49 1234 567 88</p>
+            </article>
+            <!-- California -->
+            <article>
+              <div class="img-container mb-4">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/about-4.jpg" alt="Grey building with bright yellow lemonade at Beverly sign and small storefront with nearby palm trees in California" loading="lazy" onerror="this.style.display='none';" />
+              </div>
+              <h2 class="text-xl font-semibold mb-2">California</h2>
+              <address class="not-italic text-gray-500 mb-4 leading-relaxed"> 1000 California St 68114 Omaha <br /> United States </address>
+              <p class="text-gray-900 font-medium">+44 1234 567 88</p>
+            </article>
+          </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 px-6 sm:px-12">
+          <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-y-10 gap-x-8">
+            <!-- Branding & Contact Info -->
+            <div class="col-span-2">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" width="120px">
+              <address class="mt-6 not-italic text-gray-400 space-y-3 text-sm">
+                <pre>
+																	<i class="fa-solid fa-location-dot"></i>  29 SE 2nd Ave, Miami Florida 33131
+																</pre>
+                <pre>
+																	<i class="fa-solid fa-envelope"></i>  info@example.com
+																</pre>
+                <p class="mt-3 font-semibold text-white text-lg">(+92) 3942 7879</p>
+              </address>
+            </div>
+            <!-- Shopping Links -->
+            <div>
+              <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">SHOPPING</h3>
+              <nav class="space-y-3 text-gray-400 text-sm" aria-label="Shopping links">
+                <a href="#" class="block hover:text-white">Wishlist</a>
+                <a href="#" class="block hover:text-white">Shop by Brand</a>
+                <a href="#" class="block hover:text-white">Offers</a>
+                <a href="#" class="block hover:text-white">Track order</a>
+                <a href="#" class="block hover:text-white">Size Guide</a>
+              </nav>
+            </div>
+            <!-- Information Links -->
+            <div>
+              <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">INFOMATION</h3>
+              <nav class="space-y-3 text-gray-400 text-sm" aria-label="Information links">
+                <a href="#" class="block hover:text-white">Track Order</a>
+                <a href="#" class="block hover:text-white">Shipping & Returns</a>
+                <a href="#" class="block hover:text-white">About us</a>
+                <a href="#" class="block hover:text-white">Help</a>
+                <a href="#" class="block hover:text-white">Gift Cards</a>
+              </nav>
+            </div>
+            <!-- Account Links -->
+            <div>
+              <h3 class="font-bold text-sm text-white uppercase tracking-wide mb-5">ACCOUNT</h3>
+              <nav class="space-y-3 text-gray-400 text-sm" aria-label="Account links">
+                <a href="#" class="block hover:text-white">Cart</a>
+                <a href="#" class="block hover:text-white">My account</a>
+                <a href="#" class="block hover:text-white">My orders</a>
+                <a href="#" class="block hover:text-white">Wishlist</a>
+                <a href="#" class="block hover:text-white">Affiliate Program</a>
+              </nav>
+            </div>
+            <!-- Newsletter & Social -->
+            <div class=" w-[500px]max-w-md">
+              <h3 class="font-bold text-white mb-5 text-lg"> Let’s keep in touch </h3>
+              <form class="mb-6" aria-label="Subscribe to newsletter">
+                <div class="relative">
+                  <!-- Input Field -->
+                  <input type="email" placeholder="Enter your email address" aria-label="Email address" class="w-full rounded border border-gray-700 bg-transparent px-4 pr-12 py-2 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" />
+                  <button type="submit" aria-label="Subscribe" title="Subscribe" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </div>
+                <br>
+                <div class="flex gap-6 text-gray-400 icon" aria-label="Social media links">
+                  <a href="#" aria-label="Facebook" class="hover:text-white" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#" aria-label="TikTok" class="hover:text-white" title="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                  <a href="#" aria-label="X (Twitter)" class="hover:text-white" title="X (Twitter)">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href="#" aria-label="YouTube" class="hover:text-white" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="#" aria-label="Instagram" class="hover:text-white" title="Instagram"></a>
+                </div>
+            </div>
+          </div>
+          <!-- Extra links and info container -->
+          <div class="max-w-7xl mx-auto mt-10 border border-gray-800 rounded p-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-400 text-sm select-none">
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <p class="font-semibold text-white">Didn't find what you were looking for?</p>
+                <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Contact Us</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-face-smile"></i>
+              <div>
+                <p class="font-semibold text-white">How can we help you today?</p>
+                <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Help Center</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-comment-dots"></i>
+              <div>
+                <p class="font-semibold text-white">We’d love to hear what you think!</p>
+                <a href="#" class="underline hover:text-white transition-colors" tabindex="0">Give Feedback</a>
+              </div>
+            </div>
+          </div>
+          <!-- Copyright and payment methods -->
+          <div class="max-w-7xl mx-auto mt-12 flex flex-col-reverse md:flex-row justify-between items-center space-y-6 md:space-y-0 text-gray-500 text-xs select-none">
+            <p>Copyright © Merto. All Rights Reserved</p>
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" width="250px">
+          </div>
+        </footer>
+      </body>
+    </html>
+    <script>
+      // Basic form validation and submission handling
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        // Simple required fields validation
+        const fullname = form.fullname.value.trim();
+        const email = form.email.value.trim();
+        const subject = form.subject.value.trim();
+        if (!fullname || !email || !subject) {
+          alert('Please fill in all required fields: Name and Surname, Email, Subject.');
+          return;
+        }
+        // Validate email format (simple)
+        const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+        if (!emailPattern.test(email)) {
+          alert('Please enter a valid email address.');
+          return;
+        }
+        // Form is valid, simulate form submission
+        alert('Thank you for getting in touch, ' + fullname + '! We will get back to you shortly.');
+        // Reset form
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
