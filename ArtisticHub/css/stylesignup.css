@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f3e9;
+    color: #5a4033;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #fffaf0;
+    border: 1px solid #d2b48c;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem; 
+    font-weight: 600;
+    color: #5a4033;
+    margin-bottom: 20px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1rem; 
+    font-weight: 500;
+    color: #5a4033;
+}
+
+input, select, textarea {
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #d2b48c;
+    border-radius: 8px; 
+    font-size: 0.9rem; 
+    font-weight: 400;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #a67c52;
+    box-shadow: 0 0 8px rgba(166, 124, 82, 0.5);
+}
+
+button {
+    background-color: #5a4033;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #beafa8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+p {
+    margin-top: 10px; 
+    font-size: 0.9rem; 
+    font-weight: 400;
+    color: #5a4033;
+}
+
+a {
+    color: #5a4033;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #5a4033;
+    font-size: 0.85rem; 
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: #a67c52;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(166, 124, 82, 0.5);
+}
+.underline-link {
+    color: #5a4033; 
+    text-decoration: underline;
+    font-weight: bold; 
+}
+.underline-link:hover {
+    color: #a67c52;
+    text-decoration: underline;
+}

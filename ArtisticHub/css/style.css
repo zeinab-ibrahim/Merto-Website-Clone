@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #a18e79; 
+        align-items: center;
+        color:#6b4226; 
+        padding: 0% 70px;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 5px 10px #fffbf833; 
+        z-index: 1000;
+    }
+    header h2 {
+        font-size: 1.8rem;
+        margin-left: 10px;
+        font-family: 'Oswald', sans-serif;
+        color:#6b4226; 
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color:#6b4226 ; 
+        font-size: 1rem;
+        font-family: 'Oswald', sans-serif;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    nav a:hover {
+        background-color: #a18e79;
+        color:#a18e79; 
+        transform: scale(1.1);
+    } 
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #5a3e2b; 
+    text-align: center; 
+    padding: 20px;
+    background-image: url('../img/back.jpg'); 
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 3rem; 
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero h2 span {
+    color: #a67c52;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.gallery {
+    padding: 60px 20px;
+    background-color: #f7f3e9; 
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    font-size: 2.5rem;
+    color: #5a3e2b; 
+    margin-bottom: 40px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .gallery .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .gallery .card {
+    background-color: #fff; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(90, 62, 43, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px; 
+  }
+  
+  .gallery .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(90, 62, 43, 0.2);
+  }
+  
+  .gallery .card img {
+    width: 100%; 
+    display: block;
+  }
+  
+  .gallery .card h3 {
+    font-size: 1.2rem;
+    color: #5a3e2b;
+    margin: 15px 0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+  }
+.services {
+    padding: 80px;
+    background: linear-gradient(120deg, #f7f3e9, #eae0d5); 
+    border-top: 8px solid #a67c52; 
+    border-bottom: 8px solid #a67c52;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: 'Oswald', sans-serif;
+    color: #5a3e2b;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    
+}
+
+.services h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 120px;
+    height: 3px;
+    background: #a67c52;
+     
+}
+.services .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    background-color: #fefbf7; 
+    width: 28%;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(90, 62, 43, 0.2); 
+    transition: all 0.3s ease;
+    text-align: center;   
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid transparent;
+    background-image: linear-gradient(#fefbf7, #fefbf7), 
+                      linear-gradient(to right, #a67c52, #d4b59e); 
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.services .card:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0px 10px 20px rgba(90, 62, 43, 0.3); 
+}
+.services .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #a67c52; 
+    text-transform: uppercase;
+}
+
+.services .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5a3e2b; 
+}
+@media (max-width: 768px) {
+    .services .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .card {
+        width: 90%;
+    }
+}
+
+.footer {
+    background: linear-gradient(120deg, #f7f3e9, #eae0d5); 
+    color: #5a3e2b; 
+    padding: 50px 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center; 
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.footer-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #a67c52; 
+    text-transform: uppercase;
+    border-bottom: 2px solid #a67c52; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.footer-section p,
+.footer-section a {
+    font-size: 1rem;
+    color: #5a3e2b; 
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+
+.footer-section a:hover {
+    color: #a67c52; 
+    text-decoration: underline;
+}
+
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links li {
+    margin: 10px 0;
+}
+
+.footer-section.links a {
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+
+.footer-section.links a:hover {
+    color: #a67c52; 
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #a67c52; 
+    padding-top: 10px;
+    color: #5a3e2b; 
+}
+
+
+.footer-container .footer-section {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer-container .footer-section:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+.footer-section h3 {
+    color: #5a3e2b; 
+    text-decoration: underline;
+  }
+  
+  
+  .footer-section a {
+    text-decoration: underline;
+  }
+  
+}
+
+  .footer-bottom {
+    background-color: #5d4037;  
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #f5f5f5;  
+  }

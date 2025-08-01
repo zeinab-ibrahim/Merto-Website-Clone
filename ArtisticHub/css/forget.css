@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e1; 
+    color: #4b3c31; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+header {
+    background-color: #4b3c31; 
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.reset-confirmation {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.reset-confirmation h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #4b3c31; 
+}
+
+.reset-confirmation p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4b3c31; 
+}
+
+.reset-confirmation a {
+    color: #4b3c31; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #4b3c31;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.reset-confirmation a:hover {
+    background-color: #4b3c31; 
+    color: white; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4b3c31; 
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
